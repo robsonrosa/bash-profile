@@ -4,11 +4,11 @@ function fnUpdate() {
    git clone git@github.com:robsonrosa/bash-profile.git
    cp -R c:/bpTemp/bash-profile/profiles/. ~/
    rm -rf c:/bpTemp
-   if [ -z $1 ]; 
-      then reset; 
-      else change $1; 
-   fi
    clear
+   if [ -z $1 ]; 
+      then reset; echo 'Everything is up to date and your current context is [base]'
+      else change $1; echo 'Everything is up to date and your current context is ['$1']'
+   fi
 }
 
 function fnChange() {
