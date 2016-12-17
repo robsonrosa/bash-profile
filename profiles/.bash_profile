@@ -4,8 +4,11 @@ function fnUpdate() {
    git clone git@github.com:robsonrosa/bash-profile.git
    cp -R c:/bpTemp/bash-profile/profiles/. ~/
    rm -rf c:/bpTemp
+   if [ -z $1 ]; 
+      then reset; 
+      else change $1; 
+   fi
    c && version
-   if [ -z $1 ]; then reset; else change $1; fi
 }
 
 function fnChange() {
@@ -18,7 +21,7 @@ function fnChange() {
 alias update='fnUpdate'
 alias change='fnChange'
 alias reset='source ~/.bash_profile'
-alias version='echo default version 0.1.0'
+alias version='echo base version 0.1.0'
 
 # General Helper
 alias c='clear'
