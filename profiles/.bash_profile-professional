@@ -8,7 +8,7 @@ function fnUpdate() {
       then reset; 
       else change $1; 
    fi
-   c && version
+   clear
 }
 
 function fnChange() {
