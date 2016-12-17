@@ -1,9 +1,11 @@
 # Base Functions
 function fnUpdate() {
+   BP_CURR_DIR=$PWD
    mkdir -p c:/bpTemp && cd $_
    git clone git@github.com:robsonrosa/bash-profile.git
    cp -R c:/bpTemp/bash-profile/dist/. ~/
    rm -rf c:/bpTemp
+   cd $BP_CURR_DIR
    clear
    if [ -z $1 ]; 
       then reset; echo 'Everything is up to date and your current context is [base]'
