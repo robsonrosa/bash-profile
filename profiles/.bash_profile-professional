@@ -18,7 +18,7 @@ function fnChange() {
 alias update='fnUpdate'
 alias change='fnChange'
 alias reset='source ~/.bash_profile'
-alias version='echo default version 0.1.0'
+alias version='echo professional version 0.1.0'
 
 # General Helper
 alias c='clear'
