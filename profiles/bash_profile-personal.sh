@@ -1,5 +1,4 @@
 //=include ../includes/base.sh
-alias version='echo personal version 0.1.0'
+//=include ../includes/general.sh
 
-# General Helper
-alias c='clear'
+alias version='echo personal version 0.1.1'
