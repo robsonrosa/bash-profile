@@ -1,9 +1,6 @@
 # Base Functions
 function fnUpdate() {
-   mkdir -p c:/bpTemp && cd $_
-   git clone git@github.com:robsonrosa/bash-profile.git
-   cp -R c:/bpTemp/bash-profile/profiles/. ~/
-   rm -rf c:/bpTemp
+   npm i -g bash-profile
    clear
    if [ -z $1 ]; 
       then reset; echo 'Everything is up to date and your current context is [base]'
@@ -14,7 +11,7 @@ function fnUpdate() {
 function fnChange() {
    rm -rf ~/.bash_profile
    cp -R ~/.bash_profile-$1 ~/.bash_profile
-   reset
+   source ~/.bash_profile
 }
 
 # Base 
