@@ -1,6 +1,6 @@
 {
   "name": "bash-profile",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Keep tracked and up-to-dated my custom aliases for .bash_profile",
   "bin": {
     "bpmi": "install.js"
