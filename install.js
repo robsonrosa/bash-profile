@@ -7,6 +7,7 @@ const shell = require("shelljs");
 install();
 
 function install() {
+  shell.exec('mv ~/.bash_profile ~/.bash_profile.bak 2>/dev/null');
   shell.exec(`cp -R "${__dirname}/dist/." ~/`);
 
   shell.echo(' **********************************************************************');
