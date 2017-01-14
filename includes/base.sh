@@ -8,7 +8,7 @@ function fnUpdate() {
    cd $BP_CURR_DIR
    clear
    if [ -z $1 ]; 
-      then reset; echo 'Everything is up to date and your current context is [base]'
+      then source ~/.bash_profile; echo 'Everything is up to date and your current context is [base]'
       else change $1; echo 'Everything is up to date and your current context is ['$1']'
    fi
 }
@@ -16,7 +16,7 @@ function fnUpdate() {
 function fnChange() {
    rm -rf ~/.bash_profile
    cp -R ~/.bash_profile-$1 ~/.bash_profile
-   reset
+   source ~/.bash_profile
 }
 
 # Base 
