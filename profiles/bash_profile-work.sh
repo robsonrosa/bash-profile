@@ -1,4 +1,4 @@
 //=include ../includes/base.sh
 //=include ../includes/general.sh
 
-alias version='echo professional version 0.1.1'
+alias version='echo work version 0.2.0'

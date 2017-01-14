@@ -1,4 +1,4 @@
 //=include ../includes/base.sh
 //=include ../includes/general.sh
 
-alias version='echo personal version 0.1.1'
+alias version='echo home version 0.2.0'
