@@ -1,2 +1,5 @@
 # Build Components
 node_modules
+
+# IDE
+.vscode
