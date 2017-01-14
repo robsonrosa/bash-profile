@@ -1,6 +1,6 @@
 {
   "name": "bash-profile",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Keep tracked and up-to-dated my custom aliases for .bash_profile",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
