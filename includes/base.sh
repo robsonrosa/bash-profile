@@ -1,4 +1,6 @@
+
 # Base Functions
+# --------------
 function fnUpdate() {
    BP_CURR_DIR=$PWD
    mkdir -p ${target} && cd $_

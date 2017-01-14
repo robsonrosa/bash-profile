@@ -1,4 +1,6 @@
+
 # Base Functions
+# --------------
 function fnUpdate() {
    BP_CURR_DIR=$PWD
    mkdir -p c:/bpmtemp && cd $_
@@ -23,5 +25,6 @@ function fnChange() {
 alias update='fnUpdate'
 alias change='fnChange'
 alias reset='source ~/.bash_profile'
+
 
 alias version='echo base version 0.1.1'
