@@ -1,0 +1,159 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\dev\\.tools\\nodejs\\node.exe',
+1 verbose cli   'C:\\dev\\.tools\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'unpublish',
+1 verbose cli   '--force' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 warn using --force I sure hope you know what you are doing.
+5 silly unpublish args[0] undefined
+6 silly unpublish thing {}
+7 verbose unpublish { name: 'bash-profile',
+7 verbose unpublish   version: '0.2.2',
+7 verbose unpublish   description: 'Keep tracked and up-to-dated my custom aliases for .bash_profile',
+7 verbose unpublish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+7 verbose unpublish   repository:
+7 verbose unpublish    { type: 'git',
+7 verbose unpublish      url: 'git+https://github.com/robsonrosa/bash-profile.git' },
+7 verbose unpublish   keywords: [ 'bash', 'shell', 'bash_profile', 'custom' ],
+7 verbose unpublish   author: { name: 'robsonrosa' },
+7 verbose unpublish   license: 'Unlicense',
+7 verbose unpublish   bugs: { url: 'https://github.com/robsonrosa/bash-profile/issues' },
+7 verbose unpublish   homepage: 'https://github.com/robsonrosa/bash-profile#readme',
+7 verbose unpublish   devDependencies:
+7 verbose unpublish    { gulp: '^3.9.1',
+7 verbose unpublish      'gulp-clean': '^0.3.2',
+7 verbose unpublish      'gulp-include': '^2.3.1',
+7 verbose unpublish      'gulp-rename': '^1.2.2',
+7 verbose unpublish      'gulp-replace': '^0.5.4',
+7 verbose unpublish      'gulp-sequence': '^0.4.6',
+7 verbose unpublish      'merge-stream': '^1.0.1' },
+7 verbose unpublish   dependencies: {},
+7 verbose unpublish   readme: '# bash-profile\r\nKeep tracked and up-to-dated my custom aliases for .bash_profile\r\n',
+7 verbose unpublish   readmeFilename: 'README.md',
+7 verbose unpublish   gitHead: '27f3f50979ba01d60dd35b9777111d67007801f2',
+7 verbose unpublish   _id: 'bash-profile@0.2.2' }
+8 verbose getPublishConfig undefined
+9 silly ls normalized bash-profile\0.2.2
+10 silly gentlyRm C:\Users\Robson Rosa\AppData\Roaming\npm-cache\bash-profile\0.2.2 is being purged
+11 verbose gentlyRm don't care about contents; nuking C:\Users\Robson Rosa\AppData\Roaming\npm-cache\bash-profile\0.2.2
+12 silly mapToRegistry name bash-profile
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/bash-profile
+16 verbose get GET as part of write; not caching result
+17 verbose request uri https://registry.npmjs.org/bash-profile?write=true
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 21:52:54
+20 verbose request using bearer token for auth
+21 verbose request id 9ce66609a93bf9d5
+22 http request GET https://registry.npmjs.org/bash-profile?write=true
+23 http 200 https://registry.npmjs.org/bash-profile?write=true
+24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   etag: '"587ab1d9-2501"',
+24 verbose headers   'content-encoding': 'gzip',
+24 verbose headers   'cache-control': 'max-age=0',
+24 verbose headers   'transfer-encoding': 'chunked',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Sat, 14 Jan 2017 23:52:58 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-gru7125-GRU',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1484437977.683427,VS0,VE883',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     'content-type': 'application/json',
+25 silly get     etag: '"587ab1d9-2501"',
+25 silly get     'content-encoding': 'gzip',
+25 silly get     'cache-control': 'max-age=0',
+25 silly get     'transfer-encoding': 'chunked',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Sat, 14 Jan 2017 23:52:58 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-gru7125-GRU',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1484437977.683427,VS0,VE883',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose get saving bash-profile to C:\Users\Robson Rosa\AppData\Roaming\npm-cache\registry.npmjs.org\bash-profile_3Fwrite_3Dtrue\.cache.json
+27 verbose unpublish removing attachments { shasum: '975db488bc519cd368bf1753c4383ac97474b388',
+27 verbose unpublish   tarball: 'https://registry.npmjs.org/bash-profile/-/bash-profile-0.2.2.tgz' }
+28 verbose request uri https://registry.npmjs.org/bash-profile/-rev/6-2e2594e4d86711709af2262c402c309a
+29 verbose request sending authorization for write operation
+30 info attempt registry request try #1 at 21:52:55
+31 verbose request using bearer token for auth
+32 http request PUT https://registry.npmjs.org/bash-profile/-rev/6-2e2594e4d86711709af2262c402c309a
+33 http 500 https://registry.npmjs.org/bash-profile/-rev/6-2e2594e4d86711709af2262c402c309a
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=0',
+34 verbose headers   'content-length': '57',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Sat, 14 Jan 2017 23:52:59 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-gru7122-GRU',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1484437978.798404,VS0,VE881' }
+35 info retry will retry, error on last attempt: Error: "bash-profile status = 403" : bash-profile
+36 info attempt registry request try #2 at 21:53:06
+37 verbose request using bearer token for auth
+38 http request PUT https://registry.npmjs.org/bash-profile/-rev/6-2e2594e4d86711709af2262c402c309a
+39 http 500 https://registry.npmjs.org/bash-profile/-rev/6-2e2594e4d86711709af2262c402c309a
+40 verbose headers { 'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=0',
+40 verbose headers   'content-length': '57',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Sat, 14 Jan 2017 23:53:10 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-gru7123-GRU',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1484437989.936786,VS0,VE1045' }
+41 info retry will retry, error on last attempt: Error: "bash-profile status = 403" : bash-profile
+42 info attempt registry request try #3 at 21:54:08
+43 verbose request using bearer token for auth
+44 http request PUT https://registry.npmjs.org/bash-profile/-rev/6-2e2594e4d86711709af2262c402c309a
+45 http 500 https://registry.npmjs.org/bash-profile/-rev/6-2e2594e4d86711709af2262c402c309a
+46 verbose headers { 'content-type': 'application/json',
+46 verbose headers   'cache-control': 'max-age=0',
+46 verbose headers   'content-length': '57',
+46 verbose headers   'accept-ranges': 'bytes',
+46 verbose headers   date: 'Sat, 14 Jan 2017 23:54:12 GMT',
+46 verbose headers   via: '1.1 varnish',
+46 verbose headers   connection: 'keep-alive',
+46 verbose headers   'x-served-by': 'cache-gru7120-GRU',
+46 verbose headers   'x-cache': 'MISS',
+46 verbose headers   'x-cache-hits': '0',
+46 verbose headers   'x-timer': 'S1484438051.333124,VS0,VE898' }
+47 verbose request invalidating C:\Users\Robson Rosa\AppData\Roaming\npm-cache\registry.npmjs.org\bash-profile on PUT
+48 error unpublish Failed to update data
+49 verbose stack Error: "bash-profile status = 403" : bash-profile
+49 verbose stack     at makeError (P:\.dev\.tools\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+49 verbose stack     at CachingRegistryClient.<anonymous> (P:\.dev\.tools\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+49 verbose stack     at Request._callback (P:\.dev\.tools\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+49 verbose stack     at Request.self.callback (P:\.dev\.tools\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+49 verbose stack     at emitTwo (events.js:87:13)
+49 verbose stack     at Request.emit (events.js:172:7)
+49 verbose stack     at Request.<anonymous> (P:\.dev\.tools\nodejs\node_modules\npm\node_modules\request\request.js:1063:14)
+49 verbose stack     at emitOne (events.js:82:20)
+49 verbose stack     at Request.emit (events.js:169:7)
+49 verbose stack     at IncomingMessage.<anonymous> (P:\.dev\.tools\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+50 verbose statusCode 500
+51 verbose pkgid bash-profile
+52 verbose cwd P:\.dev\robsonrosa\bash-profile\dist
+53 error Windows_NT 10.0.14393
+54 error argv "C:\\dev\\.tools\\nodejs\\node.exe" "C:\\dev\\.tools\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "unpublish" "--force"
+55 error node v4.2.2
+56 error npm  v2.14.7
+57 error code E500
+58 error "bash-profile status = 403" : bash-profile
+59 error If you need help, you may report this error at:
+59 error     <https://github.com/npm/npm/issues>
+60 verbose exit [ 1, true ]

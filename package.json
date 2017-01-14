@@ -2,13 +2,8 @@
   "name": "bash-profile",
   "version": "0.2.2",
   "description": "Keep tracked and up-to-dated my custom aliases for .bash_profile",
-  "bin": {
-    "bpmi": "install.js"
-  },
-  "main": "install.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "bpmi"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -35,7 +30,5 @@
     "gulp-sequence": "^0.4.6",
     "merge-stream": "^1.0.1"
   },
-  "dependencies": {
-    "shelljs": "^0.7.5"
-  }
+  "dependencies": {}
 }

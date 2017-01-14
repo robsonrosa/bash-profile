@@ -41,6 +41,14 @@ gulp.task('merge', function () {
    return stream.pipe(gulp.dest('./dist'));
 });
 
-gulp.task('main', sequence('clean', 'merge'));
+gulp.task('install', function () {
+   gulp.src(['./install.sh'])
+    .pipe(source())
+    .pipe(target())
+    .pipe(gulp.dest('./dist'));
+});
+
+
+gulp.task('main', sequence('clean', 'merge', 'install'));
 
 gulp.task('default', ['main']);
