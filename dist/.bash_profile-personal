@@ -1,10 +1,10 @@
 # Base Functions
 function fnUpdate() {
    BP_CURR_DIR=$PWD
-   mkdir -p c:/bpTemp && cd $_
+   mkdir -p c:/bpmtemp && cd $_
    git clone git@github.com:robsonrosa/bash-profile.git
-   cp -R c:/bpTemp/bash-profile/dist/. ~/
-   rm -rf c:/bpTemp
+   cp -R c:/bpmtemp/bash-profile/dist/. ~/
+   rm -rf c:/bpmtemp
    cd $BP_CURR_DIR
    clear
    if [ -z $1 ]; 

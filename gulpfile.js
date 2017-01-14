@@ -2,16 +2,27 @@ var gulp = require('gulp');
 
 var clean = require('gulp-clean');
 var rename = require("gulp-rename");
+var replace = require("gulp-replace");
 var include = require('gulp-include');
 var sequence = require('gulp-sequence');
 var stream = require('merge-stream')();
+
+var config = require('./config.js')();
 
 gulp.task('clean', function () {
    return gulp.src('./dist').pipe(clean());
 });
 
-function include() {
+function join() {
    return include({ extensions: ['sh'] });
+}
+
+function source() {
+   return replace('${repository}', config.repository);
+}
+
+function target() {
+   return replace('${target}', config.target);
 }
 
 function extension() {
@@ -23,7 +34,9 @@ function extension() {
 
 gulp.task('merge', function () {
    stream.add(gulp.src('./profiles/*.sh'));
-   stream.pipe(include());
+   stream.pipe(join());
+   stream.pipe(source());
+   stream.pipe(target());
    stream.pipe(extension());
    return stream.pipe(gulp.dest('./dist'));
 });
