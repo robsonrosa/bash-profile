@@ -19,3 +19,4 @@ alias glo="git log --graph --abbrev-commit --decorate --format=format:'%C(bold b
 alias gsta='git stash save -u'
 alias gstaa='git stash apply'
 alias gdb='deleteBranch'
+alias gz='reset --soft HEAD~1'
