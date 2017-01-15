@@ -3,3 +3,9 @@ node_modules
 
 # IDE
 .vscode
+
+# Logs
+*.log
+
+# Build
+dist
